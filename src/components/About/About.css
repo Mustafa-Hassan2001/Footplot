@@ -1,0 +1,30 @@
+#about .container{
+    display: grid;
+    grid-template-columns: 400px auto; 
+    gap: 30px;
+}
+
+#about .about-image{
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#about .about-image:hover img{ 
+    transform:scale(1.2);
+}
+
+#about .buttons-wrapper{
+    margin-top: 30px;
+}
+
+
+/* Make it responsive */ 
+
+@media (max-width:850px) { 
+    #about .container *{
+        text-align: center;
+    }
+    #about .container{
+        grid-template-columns: 100%;
+    }
+}

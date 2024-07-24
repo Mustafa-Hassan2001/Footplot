@@ -1,0 +1,84 @@
+#products .products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+}
+
+#products .product {
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+#products .product:hover {
+    background: var(--bg-accent);
+}
+
+#products .middle,
+#products .bottom {
+    padding: 10px 20px;
+}
+
+#products .middle {
+    flex: 1;
+}
+
+#products .middle * {
+    font-size: 14px;
+}
+
+#products .top {
+    border-radius: 10px; 
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;    
+}
+
+#products .top:hover {
+    box-shadow: 0 0 1px 2px var(--primary);
+}
+
+#products .top:hover img { 
+    transform: scale(1.1);
+}
+
+#products .top .share-btn { 
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    transition: var(--transition);
+    display: none;    
+}
+
+#products .top:hover .share-btn {
+    display: flex;
+}
+
+#products .row {
+    justify-content: space-between; 
+    margin-bottom: 10px;
+}
+
+#products .star {
+    color: var(--warning);
+}
+
+/* Make it responsive */ 
+
+@media (max-width:1000px){
+    #products .products-container{
+        grid-template-columns: repeat (3,1fr);        
+    }
+    #products .title
+    #products .btn{
+        font-size: 12px;
+    }
+    #products .btn{
+        padding: 10px;
+    }
+}

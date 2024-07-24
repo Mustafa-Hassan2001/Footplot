@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+    <defs>
+      <path id="textcircle" d="M250,400
+                   a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
+    </defs>
+    <g class="textcircle">
+      <text textLength="940" class="text">
+        <textPath 
+                  xlink:href="#textcircle" 
+                  aria-label="Discount circle" 
+                  textLength="940">
+          We Provides High Quality Shoes
+        </textPath>
+      </text>
+    </g>
+</svg>

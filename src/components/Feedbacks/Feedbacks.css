@@ -1,0 +1,65 @@
+#feedbacks .feedbacks-container {
+    margin-top: 60px;
+}
+
+#feedbacks .slick-track {
+    display: flex !important;
+    gap: 20px;
+}
+
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+
+#feedbacks .feed-block {
+    background: var(--bg-accent);
+    position: relative;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: solid 2px transparent;
+    transition: var(--transition);
+}
+
+#feedbacks .feed-block:hover {
+    border-color: var(--primary-accent);
+    background: var(--bg-secondary);
+}
+
+#feedbacks .profile {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: auto;
+    background: var(--bg-muted);
+    transition: var(--transition);
+}
+
+#feedbacks .profile:hover {
+    opacity: 0.5;
+}
+
+#feedbacks .details {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#feedbacks .bottom {
+    text-align: center;
+}
+
+#feedbacks .stars-container {
+    color: var(--warning);
+}
+
+#feedbacks .name {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    #feedbacks .slick-track {
+        gap: 0;
+    }
+}
